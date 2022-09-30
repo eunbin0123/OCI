@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700&display=swap');
+
+
+/* Resets */
+* {
+    padding: 0;
+    border: 0;
+    margin: 0;
+    
+    box-sizing: border-box;
+}
+
+body{
+/*    padding-top: 56px;*/
+    font-family: 'Open Sans', 'Noto Sans KR';
+    overflow-x:hidden;
+}
+
+a {
+    color: inherit;
+    font-family: inherit;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    height: auto;
+    vertical-align: top;
+    -ms-interpolation-mode:bicubic
+}
+
+p{
+    word-break: keep-all;
+}
+
+input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+}
+
+select {
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    border-radius: 0;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+button {
+    background-color: transparent;
+    cursor: pointer;
+    overflow: visible;
+    outline: none;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+    font-family: inherit;
+    font-weight: normal;
+}
+
+em{
+    font-style: normal;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+/* Typograghy */
+:root {
+    font-size: 16px;
+}
+
+
+
+/* Layouts */
+.l_wrapper {
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    padding: 0 20px;
+}
+
+.l_row {}
+.l_col {
+    float: left;
+    box-sizing: border-box;
+}
+.l_col_12_12 { width: 100%; }
+.l_col_11_12 { width: 91.66666667%; }
+.l_col_10_12 { width: 83.33333333%; }
+.l_col_9_12 { width: 75%; }
+.l_col_8_12 { width: 66.66666667%; }
+.l_col_7_12 { width: 58.33333333%; }
+.l_col_6_12 { width: 50%; }
+.l_col_5_12 { width: 41.66666667%; }
+.l_col_4_12 { width: 33.33333333%; }
+.l_col_3_12 { width: 25%; }
+.l_col_2_12 { width: 16.66666667%; }
+.l_col_1_12 { width: 8.33333333%; }
+
+
+/* Commons */
+.clearfix::before,
+.clearfix::after {
+    content: "";
+    display: table;
+}
+.clearfix::after {
+    clear: both;
+}
+
+.hide{
+    position: absolute;
+    top: -9999px; left: -9999px;
+}
+
+/*--------------------------------------------------------모바일--------------------------------------------------------*/
+
+@media screen and (max-width: 800px) {
+
+    .l_wrapper{
+        padding: 0 20px;
+    }
+}

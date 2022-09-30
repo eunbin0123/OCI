@@ -1,0 +1,304 @@
+/****title****/
+.title {
+    /*title 배경*/
+    background-color: #FBE8EF;
+}
+.title_img img {
+    width: 1200px;
+    right: -200px;
+}
+.title .title_name {
+    /*main issue*/
+    color: #DF1C2F;
+}
+
+.title h1 {
+    /*material highlights*/
+    height: 252px;
+    font-size: 136px;
+}
+
+.title .title_con {
+    /*타이틀 설명*/
+    color: #606060;
+    height: 84px;
+}
+
+
+/****tab***/
+
+.tab_menu li {
+    /*메뉴 3개*/
+    width: 33.3333%;
+}
+
+.tab_menu li a.active {
+    /*tab 활성화*/
+    color: #DF1C2F;
+}
+
+/****tab_content****/
+
+/*content_title*/
+.tab_title h2 {
+    /*미래 핵심사업 발굴*/
+    color: #DF1C2F;
+}
+
+.tab_title .bar {
+    background-color: #DF1C2F;
+    margin-top: 21px;
+    margin-bottom: 20px;
+}
+.tab_title ul {
+    /*title image*/
+    display: flex;
+    justify-content: space-between;
+    width: 174px;
+    padding-bottom: 80px;
+    margin: auto;
+
+}
+
+
+
+/*contentcommon*/
+.scrollbox, .scrollbox2 {
+        padding-top: 40px;
+    padding-bottom: 60px;
+    border-bottom: 1px solid #DEDEDE;
+}
+
+.tab_content>div>div:last-child{
+    border: 0;
+}
+.material_content3 .conbox p, #tab-2 .material_content4 .conbox p, #tab-3 .material_content5 .conbox p{
+    padding-bottom: 44px;
+}
+
+.tab_content > div > div >div:last-child{
+    border: 0;
+}
+.tab_content>div>div:last-child{
+    padding-bottom: 250px;
+}
+
+/*content1*/
+.material_content1 {
+    border-top: 1px solid #DEDEDE;
+}
+.material_content1 .conbox{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 4px;
+}
+
+
+.material_content1 .conbox .con1 {
+     width: 49%;
+}
+
+.material_content1 .conbox .con1 p {
+    padding-bottom: 19px;
+}
+
+.material_content1 .conbox .con1 img {
+    width: 100%;
+    position: relative;
+    left: -32px;
+}
+
+
+.material_content1 .conbox .con2 {
+    width: 46%;
+}
+
+
+.material_content1 .conbox .con2 img{
+    width: 100%;
+}
+
+/*content2*/
+
+
+.material_content2 .conbox ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-top: 5px;
+}
+
+.material_content2 .conbox ul li {
+    width: 33.3333%;
+    text-align: center;
+    border-right: 1px solid #DEDEDE;
+}
+.material_content2 .conbox ul li img{
+    width: 66%;
+}
+
+.material_content2 .conbox ul li:first-child {
+     border-left: 1px solid #DEDEDE;
+}
+
+
+/*content3*/
+
+.material_content3 .conbox {
+    padding-top: 3px;
+}
+
+.material_content3 .conbox ul {
+    display: flex;
+    justify-content: space-between;
+    
+}
+.material_content3 .conbox ul li{
+    width: 49.9%;
+}
+.material_content3 .conbox ul li img{
+    width: 100%;
+}
+
+
+
+/*content4*/
+
+
+/*tab3*/
+#tab-3 .tab_title ul{
+    width: 236px;
+}
+
+#tab-3 .material_content5 .conbox img{
+    padding-bottom: 30px;
+}
+#tab-3 .material_content5 .conbox img:last-child{
+    padding-bottom: 0;
+}
+
+/*하단 button*/
+
+
+.btn .left_btn {
+    background-color: #2AA6D3;
+}
+
+.btn .right_btn {
+    background-color: #1E3C8D;
+}
+
+
+/*--------------------------------------------------------모바일--------------------------------------------------------*/
+
+@media screen and (max-width: 800px) {
+    /*menu*/
+    .nav_act, .nav_act svg g{
+        color: #DF1C2F;
+        fill: #DF1C2F;
+    }
+    
+    /*content*/
+    .scrollbox,
+    .scrollbox2 {
+        border: 0;
+        padding-top: 20px!important;
+        padding-bottom: 30px!important;
+    }
+    .title_img img {
+        height: auto;
+        width: 375px;
+        right: 0;
+    }
+    .title h1{
+        height: 109px;
+        line-height: 45px;
+    }
+    .title h1 span{
+        padding-top: 10px;
+    }
+    .title .title_con{
+        width: 279px;
+    }
+    
+    .tab_title h2{
+        padding-bottom: 8px;
+    }
+    
+    .tab_title ul{
+        padding-top: 11px;
+        width: 111px;
+        padding-bottom: 0;
+    }
+    .tab_title ul li img{
+        width: 31.67px;
+    }
+    
+    .conbox{
+        border-top: 0;
+    }
+    .material_content1 .conbox, .material_content2 .conbox{
+        border-top: 1px solid #DEDEDE;
+    }
+    .material_content3 .conbox p, #tab-2 .material_content4 .conbox p, #tab-3 .material_content6 .conbox p, .material_content7 .conbox p{
+        padding-bottom: 24px;
+    }
+    .conbox > p{
+        padding-top: 0;
+    }
+    .tab_content>div>div:last-child{
+        padding-bottom: 60px!important;
+    }
+    .material_content1 .conbox{
+        display: block;
+    }
+    .material_content1 .conbox div{
+         width: 100%!important;
+    }
+     
+    .material_content1 .conbox .con1{
+       
+        padding-top: 9.5px;
+        padding-bottom: 21px;
+    }
+    .material_content1 .conbox .con1 img{
+        left: 0;
+    }
+    
+    .material_content2 .conbox ul{
+        display: block;
+        padding-top: 0;
+    }
+    .material_content2 .conbox ul li{
+        width: 100%;
+        border: 0;
+        padding-top: 10px;
+    }
+    .material_content2 .conbox ul li:first-child{
+        border: 0;
+    }
+    .material_content2 .conbox ul li img{
+        width: 100%;
+    }
+    .material_content3 .conbox{
+        padding-top: 0px;
+    }
+    .material_content3 .conbox p{
+        display: block;
+    }
+    .material_content3 .conbox ul{
+        display: block;
+    }
+    .material_content3 .conbox ul li{
+        width: 100%;
+    }
+    .material_content3 .conbox ul li:first-child{
+        padding-bottom: 4px;
+    }
+    
+    #tab-3 .tab_title ul{
+        width: 150px;
+    }
+    
+    
+}

@@ -1,0 +1,595 @@
+/****title****/
+.title {
+    /*title 배경*/
+    /*    background-image: url(../images/focus/main.jpg);*/
+    background-color: #D5EDF9;
+}
+
+.title_img img {
+    width: 1200px;
+    right: -200px;
+}
+
+.title .title_name {
+    /*2021 focus*/
+    color: #1E47B9;
+}
+
+.title h1 {
+    /*TRANSFORMING OPPORTUNITIES*/
+    height: 230px;
+    font-size: 120px;
+    line-height: 115px;
+}
+
+.title .title_con {
+    /*타이틀 설명*/
+    height: 112px;
+    color: #606060;
+}
+
+
+/****tab***/
+.tab_menu li {
+    /*메뉴 3개*/
+    width: 33.333%;
+}
+
+.tab_menu li a.active {
+    /*tab 활성화*/
+    color: #1E47B9;
+}
+
+/****tab_content****/
+
+/*content_title*/
+.focus_title {
+    padding-top: 103px;
+    overflow: hidden;
+    text-align: center;
+}
+
+
+.focus_title img {
+    margin-bottom: 18px;
+}
+
+.focus_title p {
+    /*Transforming*/
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 45px;
+}
+
+.focus_title h2 {
+    /*Businesses*/
+    position: relative;
+    top: -8px;
+    font-size: 68px;
+    font-weight: 500;
+    line-height: 95px;
+}
+
+.focus_title .bar {
+    background-color: #C1C1C1;
+    width: 30px;
+    height: 1px;
+    margin: auto;
+    margin-top: 18px;
+    margin-bottom: 32px;
+}
+
+.focus_title span {
+    /*설명*/
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 38px;
+    color: #AAAAAA;
+}
+
+.w_title {
+    display: block!important;
+}
+
+.m_title {
+    display: none!important;
+}
+
+/*content 크기 및 위치 조정, 공통 효과*/
+.tab_content > div > div:nth-child(n+2) {
+    /*컨텐츠 가로 정렬*/
+    display: flex;
+    justify-content: space-between;
+}
+
+.focus_content1 .txtbox,
+.focus_content3 .txtbox {
+    width: 42%;
+}
+
+.focus_content2 .txtbox {
+    width: 50%;
+}
+
+.focus_content2 .txtbox,
+.focus_content3 .txtbox {
+    /*content2, content3 공통*/
+    margin-top: 150px;
+}
+
+
+.txtbox {
+    position: relative;
+    overflow: hidden;
+}
+
+
+.txtbox h3 {
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 34px;
+    color: #1E47B9;
+}
+
+.txtbox h3::after {
+    content: '';
+    background-color: #DEDEDE;
+    display: block;
+    width: 100%;
+    height: 1px;
+    margin-top: 14px;
+    margin-bottom: 40px;
+}
+
+.txtbox p {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 34px;
+}
+
+
+/*content1*/
+.focus_content1 {
+    padding-top: 132px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.focus_content1 .txtbox {
+    overflow: visible;
+}
+
+.focus_content1 .txtbox .txtboxwrap p:nth-child(2),
+.focus_content1 .txtbox .txtboxwrap p:nth-child(3) {
+    padding-bottom: 42px;
+}
+
+.focus_content1 .imgbox,
+.focus_content3 .imgbox {
+    position: relative;
+}
+
+.imgboxwrap {
+    /*scroll*/
+    overflow: hidden;
+}
+
+.imgboxwrap > div {
+    position: relative;
+    top: 50px;
+    opacity: 0;
+}
+
+
+
+
+/*content2*/
+.focus_content2 {
+    flex-direction: row-reverse;
+    /*위치 반전*/
+    position: relative;
+    top: 50px;
+}
+
+.focus_content2 .txtbox {
+    width: 52%;
+}
+
+
+/*content3*/
+.focus_content3 {
+    position: relative;
+    top: 100px;
+    padding-bottom: 110px;
+}
+
+.focus_content3 .txtbox p {
+    padding-bottom: 37px;
+}
+
+/*subimg*/
+.subimg {
+    position: absolute;
+    right: -90px;
+    font-family: 'Poppins', 'Noto Sans KR';
+}
+
+.subimg > div {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.subimg > div div:nth-child(1) {
+    margin-top: 47px;
+}
+
+.subimg > div div:nth-child(1) > span {
+    font-size: 14px;
+}
+
+.subimg > div div:nth-child(1) p {
+    font-size: 46px;
+    color: #1E47B9;
+    font-weight: 600;
+    line-height: 57px;
+}
+
+.subimg > div div:nth-child(1) p span {
+    font-size: 28px;
+    position: relative;
+    left: -10px;
+}
+
+.subimg > div div:nth-child(1) .subimg_bar {}
+
+.subimg > div div:nth-child(2) {}
+
+.subimg_bar {
+    height: 1px;
+    background-color: #C3C3C3;
+    width: 266px;
+    position: absolute;
+    margin-top: 10px;
+}
+
+/*tab2*/
+
+
+#tab-2 .focus_content1 .subimg .subimg_bar {
+    width: 246px;
+}
+
+#tab-2 .focus_content1 .subimg .subimgwrap div:first-child {
+    position: relative;
+    left: 60px;
+}
+
+.focus_content2 .txtbox p {
+    padding-bottom: 37px;
+}
+
+/*tab3*/
+
+
+#tab-3 .focus_content1 .subimg .subimgwrap div:nth-child(2) {
+    position: relative;
+    z-index: -1;
+}
+
+#tab-3 .focus_content1 .subimg .subimg_bar {
+
+    width: 298px;
+}
+
+
+#tab-3 .focus_content1 .subimg div p {
+    letter-spacing: -0.92px;
+    line-height: 46px;
+}
+
+#tab-3 .subimg > div div:nth-child(1) {
+    margin-top: 35px;
+}
+
+
+
+
+#tab-3 .focus_content1 .subimg div > span {
+    padding-top: 0;
+}
+
+.focus_content2 .txtbox p {
+    padding-bottom: 37px;
+}
+
+
+/*하단 button*/
+.btn .left_btn {
+    background-color: #B42C39;
+}
+
+.btn .right_btn {
+    background-color: #56B760;
+}
+
+
+/*--------------------------------------------------------모바일--------------------------------------------------------*/
+
+@media screen and (max-width: 800px) {
+
+    .scrollbox,
+    .scrollbox2 {
+        padding: 0;
+    }
+
+    .container {
+        margin-top: 50px;
+    }
+
+    .tab_content.focus_c {
+        margin-bottom: 84px;
+    }
+    
+    .title h1 span{
+        font-size: 44px!important;
+    }
+    
+    .title h1 {
+        line-height: 44px;
+        margin-top: 12px;
+        height: 90px;
+        margin-bottom: 9px;
+    }
+    .w_title {
+    display: none!important;
+}
+
+.m_title {
+    display: block!important;
+}
+    .title .title_con span br {
+        display: block;
+    }
+    .title .title_con {
+        height: 156px;
+    }
+
+    .title_img img {
+        width: 375px;
+        right: 0;
+    }
+
+    .focus_title {
+        padding-top: 30px;
+        padding-bottom: 52px;
+    }
+
+    .focus_title img {
+        width: 24px;
+        height: 24px;
+        margin-bottom: 9px;
+    }
+
+    .focus_title p {
+        font-family: 'Poppins', 'Noto Sans KR';
+        font-size: 15px;
+        line-height: 28px;
+    }
+
+    .focus_title h2 {
+        font-family: 'Poppins', 'Noto Sans KR';
+        font-size: 33px;
+        line-height: 48px;
+        top: -4px;
+    }
+
+    .focus_title .bar {
+        width: 14.66px;
+        margin-top: 4px;
+        margin-bottom: 15px;
+    }
+
+    .focus_title span {
+        font-size: 14px;
+        line-height: 24px;
+        width: 280px;
+        display: block;
+        margin: auto;
+        word-break: keep-all;
+    }
+
+    .focus_content1 {
+        padding-top: 0;
+    }
+
+    .imgbox {
+        width: 100vw;
+        position: relative;
+        left: -20px;
+    }
+
+    .imgboxwrap {
+        padding-top: 0;
+    }
+
+    .imgboxwrap img {
+        width: 100vw !important;
+        height: 255px !important;
+        object-fit: cover;
+        object-position: 0 68%;
+    }
+
+    .tab_content > div > div:nth-child(n+2) {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .focus_content1 .txtbox,
+    .focus_content3 .txtbox {
+        width: 100%;
+    }
+
+    .txtbox {
+        padding-top: 0;
+    }
+
+    .txtbox h3 {
+        font-size: 18px;
+        line-height: 24px;
+        padding-top: 30px;
+        padding-bottom: 10px;
+    }
+
+    .txtbox h3::after {
+        content: none;
+    }
+
+    .txtbox p {
+        font-size: 15px;
+        line-height: 26px;
+    }
+
+    .txtbox p:last-child {
+        padding-bottom: 0;
+    }
+
+    .focus_content1 .txtbox .txtboxwrap p:nth-child(2) {
+        padding-bottom: 24px;
+    }
+
+    .focus_content1 .txtbox .txtboxwrap p:nth-child(3) {
+        padding-bottom: 0;
+    }
+
+    .focus_content2 .txtbox {
+        width: 100%;
+    }
+
+    .nav_act,
+    .nav_act svg g {
+        color: #1E3C8D;
+        fill: #1E3C8D;
+    }
+
+    .focus_content2 {
+        top: 0;
+        padding-top: 38px;
+    }
+
+    .focus_content3 {
+        top: 0;
+        padding-top: 60px;
+        padding-bottom: 0;
+    }
+
+    .focus_content3 .txtbox p {
+        padding-bottom: 24px;
+    }
+
+    .focus_content3 .txtbox p:last-child {
+        padding: 0;
+    }
+
+    .focus_content2 .txtbox,
+    .focus_content3 .txtbox {
+        margin: 0;
+    }
+
+    /*subimg*/
+    .subimg {
+        right: 0;
+        width: 379px;
+    }
+
+    .subimg img {
+        width: 182px;
+        height: 182px;
+    }
+
+    .subimg > div {
+        justify-content: space-between;
+    }
+
+    .subimg > div div:nth-child(1) > span {
+        font-size: 12px;
+        color: #1E47B9;
+        display: block;
+        line-height: 18px;
+    }
+
+    .subimg > div div:nth-child(1) p,
+    .subimg > div div:nth-child(1) p span {
+        font-size: 32px;
+    }
+
+    .subimg > div div:nth-child(1) p {
+        line-height: 48px;
+    }
+
+    .subimg > div div:nth-child(1) p span {
+        left: -5px;
+    }
+
+    .subimg_bar {
+        margin-top: 5px;
+        z-index: -1;
+    }
+    
+    #tab-1 .focus_content3 img{
+        object-position: top;
+    }
+    #tab-2 .focus_content1 .subimg .subimgwrap div:first-child {
+        left: 0;
+    }
+
+    #tab-2 .focus_content1 .subimg .subimg_bar {
+        width: 262px;
+    }
+
+    #tab-3 .subimg {
+        width: 100%;
+    }
+
+    #tab-3 .subimg > div div:nth-child(1) {
+        margin-top: 34px;
+    }
+    #tab-3 .focus_content1 img{
+        object-position: 0 46%;
+    }
+    .focus_content1 .txtbox {
+        overflow: hidden;
+    }
+
+    .focus_content2 .txtbox p {
+        padding-bottom: 27px;
+    }
+
+    .focus_content2 .txtbox p:last-child {
+        padding: 0;
+    }
+
+    #tab-3 .focus_content1 .subimg div p br {
+        display: none;
+    }
+
+    #tab-3 .subimg img {
+        width: 157px;
+        height: 157px;
+    }
+
+    #tab-3 .focus_content1 .subimg div p {
+        width: 300px;
+    }
+
+    #tab-3 .focus_content1 .subimg .subimgwrap div:nth-child(2) {
+        right: 108px;
+    }
+
+    #tab-3 .focus_content1 .subimg .subimg_bar {
+        width: 266px;
+        z-index: 10;
+    }
+    #tab-3 .focus_content2 img{
+        object-position: 0 50%;
+    }
+}

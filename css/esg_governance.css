@@ -1,0 +1,125 @@
+/*title*/
+.title{
+    /*title 배경*/
+    background-color: #DEF1F8;
+}
+
+.title .title_name {
+    color: #2AA6D3;
+}
+.title h1{
+    /*governance*/
+    font-size: 142px;
+}
+.title .title_con {
+    color: #606060;
+}
+
+/*tab_menu*/
+.tab_menu li {
+    width: 25%;
+}
+.tab_menu li a.active{
+    color: #2AA6D3;
+}
+
+/*content*/
+/*타이틀 색*/
+.tab_title h2{
+    color: #2AA6D3;
+}
+
+.tab_title .bar{
+    margin-top: 23px;
+    margin-bottom: 36px;
+    background-color: #2AA6D3;
+}
+
+
+/*content*/
+.scrollbox, .scrollbox2{
+    padding: 80px 0;
+}
+.tab_content>div>div:last-child{
+    padding-bottom: 250px;
+}
+.conbox p{
+    padding-bottom: 60px;
+}
+
+.governance_content1, .governance_content3{
+    background-color: #FAFAFA;
+}
+
+.governance_content4 .tb img{
+    width: 100%;
+}
+
+/*tab1*/
+#tab-1 .governance_content1 .conbox p{
+    padding-bottom: 0;
+}
+/*tab2*/
+#tab-2 .tb:nth-child(2) img{
+    padding-bottom: 60px;
+}
+
+
+/*tab3*/
+
+#tab-3 .governance_content2 p{
+    padding-bottom: 0;
+}
+
+/*tab4*/
+#tab-4 .governance_content1 .conbox p{
+    padding-bottom: 0;
+}
+
+/*lower button*/
+.btn .left_btn {
+    background-color: #E37E28;
+}
+
+.btn .right_btn {
+    background-color: #B42C39;
+}
+
+/*--------------------------------------------------------모바일--------------------------------------------------------*/
+
+@media screen and (max-width: 800px) {
+    
+    /*menu*/
+    .nav_act, .nav_act svg g{
+        color: #2AA6D3;
+        fill: #2AA6D3;
+    }
+    /*content*/
+    .scrollbox,
+    .scrollbox2 {
+        padding-top: 20px!important;
+        padding-bottom: 30px!important;
+    }
+    .tab_content>div>div:last-child{
+        padding-bottom: 60px!important;
+    }
+    .conbox p{
+        padding-bottom: 24px;
+    }
+    
+    #tab-2 .tb:nth-child(2) img{
+        padding-bottom: 24px;
+    }
+    #tab-2 .governance_content1 .tb:nth-child(4) img{
+        width: 864px;
+    }
+    
+    .m_t{
+        color: #2AA6D3;    
+    }
+    .btn{
+        margin-top: 0;
+    }
+
+    
+}

@@ -1,0 +1,276 @@
+/****title****/
+.title {
+    /*title 배경*/
+    background-color: #FDEADA;
+}
+
+.title .title_name {
+    /*ESG topics*/
+    color: #E37E28;
+}
+
+.title h1 {
+    /*SOCIAL*/
+    font-size: 142px;
+}
+
+.title .title_con {
+    /*타이틀 설명*/
+    color: #606060;
+}
+
+/****tab***/
+/*tab_menu*/
+.tab_menu li {
+    /*메뉴 3개*/
+    width: 33.333%;
+}
+
+.tab_menu li a.active {
+    /*tab 활성화*/
+    color: #E37E28;
+}
+
+
+/****tab_content****/
+
+.scrollbox,
+.scrollbox2 {
+    padding: 80px 0;
+}
+
+/*content_title*/
+
+/*타이틀 색*/
+.tab_title h2 {
+    color: #E37E28;
+}
+
+.tab_title .bar {
+    margin-top: 23px;
+    margin-bottom: 36px;
+}
+
+.conbox .tb {
+    margin-top: 60px;
+}
+
+.tab_title .bar {
+    background-color: #E37E28;
+}
+
+.tab_content>div>div:last-child{
+    padding-bottom: 250px;
+}
+
+.social_content1, .social_content3{
+    background-color: #FAFAFA;
+}
+
+
+/*tab2*/
+
+#tab-2 .social_content1 .conbox .tb {
+    margin-top: 79px;
+}
+
+
+/*tab3*/
+
+
+#tab-3 h4 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #E37E28;
+    padding-bottom: 17px;
+}
+
+#tab-3 .conbox ul li {
+    padding-top: 23.5px;
+    padding-bottom: 45.5px;
+    border-top: 1px solid #E5E5E5;
+}
+#tab-3 .conbox ul li:last-child {
+    padding-bottom: 0;
+}
+
+
+#tab-3 .conbox ul li:first-child {
+    padding-top: 7px;
+    border: 0;
+}
+
+#tab-3 .sortbox {
+    display: flex;
+    justify-content: space-between;
+}
+
+#tab-3 .txtbox {
+    width: 65%;
+    padding-right: 3%;
+}
+
+#tab-3 .txtbox p {
+    font-size: 18px;
+    font-weight: 200;
+    line-height: 34px;
+}
+
+#tab-3 .imgbox {
+    position: relative;
+    top: -30px;
+}
+
+#tab-3 .imgbox .s_imgtitle {
+    font-size: 14px;
+    color: #9A9A9A;
+    padding-bottom: 10px;
+}
+
+#tab-3 .imgbox img {
+    width: 260px;
+}
+
+#tab-3 .social_content2 h4 {
+    font-size: 22px;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+
+/*하단 button*/
+.btn .left_btn {
+    background-color: #56B760;
+}
+
+.btn .right_btn {
+    background-color: #2AA6D3;
+}
+
+/*--------------------------------------------------------모바일--------------------------------------------------------*/
+
+@media screen and (max-width: 800px) {
+
+    /*menu*/
+    .nav_act,
+    .nav_act svg g {
+        color: #E37E28;
+        fill: #E37E28;
+    }
+
+    .m_t {
+        color: #E37E28;
+    }
+    
+    /*content*/
+    .scrollbox,
+    .scrollbox2 {
+        padding-top: 20px !important;
+        padding-bottom: 30px !important;
+    }
+    .tab_content>div>div:last-child{
+        padding-bottom: 60px!important;
+    }
+    .conbox p {
+        padding-bottom: 24px !important;
+    }
+
+    .conbox .tb {
+        margin-top: 0;
+        width: 100%;
+    }
+
+    /*tab1*/
+    #tab-1 .social_content1 .tb img {
+        width: 788px;
+    }
+
+    #tab-1 .social_content2 .conbox p {
+        padding-bottom: 0 !important;
+    }
+
+
+    #tab-1 .social_content3 .tb img {
+        width: 424px;
+    }
+
+    #tab-1 .social_content4 .tb img {
+        width: 450px;
+    }
+
+    /*tab2*/
+    #tab-2 .social_content3 .conbox p {
+        padding-bottom: 0 !important;
+    }
+    #tab-2 .social_content1 .conbox .tb{
+        margin-top: 0;
+    }
+
+    /*tab3*/
+    #tab-3 h4 {
+        padding: 10px 0;
+    }
+    #tab-3 .conbox ul li {
+        padding: 10px 0;
+    }
+    #tab-3 .conbox ul li:first-child, #tab-3 .conbox ul li:first-child h4  {
+        padding-top: 0;
+    }
+
+    #tab-3 .conbox ul li:last-child {
+        padding-bottom: 0;
+    }
+
+    #tab-3 .sortbox {
+        display: block;
+    }
+
+    #tab-3 .txtbox {
+        width: 100%;
+        padding-right: 0;
+    }
+
+    #tab-3 .txtbox p {
+        font-size: 15px;
+        font-weight: 300;
+        line-height: 26px;
+    }
+
+    #tab-3 .imgbox {
+        position: static;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    #tab-3 .imgbox img {
+        width: 100%;
+    }
+
+    #tab-3 .imgbox .s_imgtitle {
+        padding-bottom: 0 !important;
+        padding-top: 7px;
+        font-size: 12px;
+    }
+
+    #tab-3 .social_content1 .tb img {
+        width: 650px;
+    }
+
+    #tab-3 .social_content2 h4,
+    #tab-3 h4 {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    #tab-3 .social_content2 h4 {
+        padding-top: 0;
+        padding-bottom: 10px;
+    }
+
+
+
+
+
+
+
+
+}

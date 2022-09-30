@@ -1,0 +1,625 @@
+/****title****/
+
+
+.title {
+    height: 660px;
+    margin-top: 90px;
+
+}
+
+.title_img {
+    text-align: right;
+    max-width: 1920px;
+    margin: auto;
+    width: 100%;
+    height: 660px;
+    position: absolute;
+    left: 50%;
+    overflow: hidden;
+    transform: translateX(-50%);
+}
+
+.title_img img {
+    height: 467px;
+    position: absolute;
+    right: -174px;
+    bottom: 0;
+}
+
+@media (min-width: 1920px) {
+    .title_img {
+        overflow: visible !important;
+    }
+}
+
+.title .title_name,
+.title h1,
+.title_con {
+    overflow: hidden;
+    position: relative;
+}
+
+.title .l_wrapper {
+    padding-top: 93px;
+}
+
+.title .title_name {
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 0.78px;
+    height: 71px;
+}
+
+.title .title_name span::after {
+    /*title name 하단 선*/
+    content: '';
+    display: block;
+    width: 40px;
+    height: 1px;
+    background-color: #000000;
+    margin-top: 15px;
+    margin-bottom: 22px;
+}
+
+.title h1 {
+    font-weight: 100;
+    letter-spacing: -1.562px;
+    line-height: 126px;
+    height: 126px;
+    position: relative;
+    left: -9px;
+}
+
+.title h1 span,
+.title .title_name span {
+    font-family: 'Poppins';
+}
+
+
+.title .title_con {
+    font-size: 16px;
+    line-height: 26px;
+    margin-top: 21px;
+    display: block;
+    height: 76px;
+}
+
+.title_img img:nth-child(1) {
+    display: block;
+}
+
+.title_img img:nth-child(2) {
+    display: none;
+}
+
+/****scroll animation****/
+.scroll {
+    top: 0 !important;
+    transition: all 0.7s ease-in-out;
+    opacity: 1 !important;
+}
+
+.l_wrapper.scroll {}
+
+
+.scrollbox,
+.scrollbox2,
+.scrolltitlebox {
+    overflow: hidden;
+}
+
+.scrollbox > div,
+.scrollbox2 > div,
+.scrolltitlebox > div {
+    position: relative;
+    opacity: 0;
+    top: 50px;
+}
+
+.title .title_name span,
+.title h1 span,
+.title_con span {
+    position: absolute;
+/*    opacity: 0;*/
+}
+
+/****tab****/
+.tab {
+    height: 0;
+}
+
+.down_box {
+    display: none;
+}
+
+.tab_menu_box {
+    width: 100%;
+    position: relative;
+    top: -94px;
+}
+
+.tab_menu {
+    max-width: 1400px;
+    height: 70px;
+    margin: auto;
+    display: flex;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.tab_menu li {
+    /*    display: flex;*/
+    background-color: rgba(255, 255, 255, 0.4);
+    height: 70px;
+}
+
+.tab_menu li::after {
+    content: '';
+    display: inline-block;
+    width: 1px;
+    height: 30px;
+    background-color: #A2A2A2;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.tab_menu li:last-child::after {
+    /*tab 중간 선 */
+    background-color: transparent;
+}
+
+.tab_menu li a {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    font-size: 22px;
+    color: #818181;
+    letter-spacing: 0.33px;
+    border: 0;
+    font-weight: 300;
+    line-height: 70px;
+    float: left;
+}
+
+.tab_menu li a.active {
+    /*선택된 tab 효과*/
+    font-size: 24px;
+    letter-spacing: 0.36px;
+    font-weight: 400;
+}
+
+/*tab scroll*/
+.tab_menu_box_scroll {
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 4px 4px -4px #bbb;
+}
+
+.tab_menu_scroll {
+    width: 100%;
+    height: 70px;
+}
+
+.tab_menu_li_scroll {
+    border: 0px !important;
+    width: 33.3333%;
+    background-color: #fff;
+}
+
+.tab_menu_li_scroll:last-child::after {
+    /*scroll 했을 때 우측 선 추가*/
+    background-color: #A2A2A2 !important;
+}
+
+.tab_menu_li_scroll:first-child::before {
+    /*scroll 했을 때 좌측 선 추가*/
+    content: '';
+    display: block;
+    width: 1px;
+    height: 30px;
+    background-color: #A2A2A2;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+
+
+/****tabcontent****/
+.m_t {
+    display: none;
+}
+
+.tab_content > div {
+    /*활성화 되지 않은 tabcontents*/
+    display: none;
+}
+
+.tab_content.focus_c {
+    margin-bottom: 160px;
+}
+
+.tab_content > div.active_content {
+    /*활성화 된 tabcontents*/
+    display: block;
+}
+
+/*tabtitle - tab 전체 타이틀 이름*/
+
+.tab_title {
+    padding-top: 90px;
+}
+
+.tab_title h2 {
+    font-size: 42px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.tab_title .bar {
+    height: 39px;
+    width: 1px;
+    display: block;
+    margin: auto;
+    margin-top: 23px;
+    margin-bottom: 36px;
+}
+
+/*tab_content 공통*/
+
+.l_wrapper .sort_box {
+    /*이름과 내용 가로 정렬*/
+    display: flex;
+    justify-content: space-between;
+}
+
+.namebox {
+    width: 30%;
+    padding-right: 5%;
+}
+
+.namebox h3 {
+    /*단락 이름*/
+    font-size: 34px;
+    font-weight: 500;
+    word-break: keep-all;
+}
+
+.en {
+    font-weight: 600 !important;
+}
+
+.conbox {
+    /*단락 내용 박스*/
+    width: 70%;
+}
+
+.conbox > p {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 34px;
+    padding-top: 2px;
+}
+
+
+
+
+
+/****하단 버튼****/
+.btn {
+    display: flex;
+}
+
+.btn > div {
+    width: 50%;
+    height: 200px;
+    color: #fff;
+}
+
+.btn div a {
+    display: flex;
+    align-items: center;
+}
+
+.btn .left_btn a {
+    justify-content: flex-end;
+    padding-left: 20px;
+}
+
+.btn .right_btn a {
+    padding-right: 20px;
+}
+
+/*하단 버튼 화살표 버튼 */
+.btn .left_btn a .btn_move {
+    padding-right: 60px;
+}
+
+.btn .right_btn a .btn_move {
+    padding-left: 60px;
+}
+
+.btn div a .btn_title {
+    /*버튼 이름*/
+    max-width: 700px;
+    width: 100%;
+    padding-left: 20px;
+}
+
+.btn .right_btn a .btn_title {
+    /*우측 버튼 이름 정렬*/
+    text-align: right;
+}
+
+.btn div a p:nth-child(1) {
+    opacity: 0.6;
+    font-size: 16px;
+}
+
+.btn div a p:nth-child(2) {
+    font-size: 34px;
+    line-height: 50px;
+}
+
+.btn div a {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/*--------------------------------------------------------모바일--------------------------------------------------------*/
+
+@media screen and (max-width: 800px) {
+
+    .title {
+        margin-top: 50px;
+        height: 450px;
+    }
+
+    .m_t {
+        display: block;
+        font-size: 14px;
+        font-weight: 700;
+        padding-bottom: 10px;
+    }
+
+    .title_img {
+        height: 450px;
+    }
+
+    .title_img img {
+        height: auto;
+        width: 375px;
+        right: 0;
+    }
+
+    .title_img img:nth-child(1) {
+        display: none;
+    }
+
+    .title_img img:nth-child(2) {
+        display: block;
+    }
+
+    .title .title_name {
+        font-size: 12px;
+        height: 20px;
+        margin-bottom: 2px;
+    }
+
+    .title .title_name span::after {
+        content: none;
+    }
+
+    .title .title_name span {
+        display: block;
+        height: 20px;
+        border-bottom: 1px solid;
+    }
+
+    .title h1 {
+        height: 64px;
+        line-height: 64px;
+        left: -4px;
+        font-weight: 200;
+    }
+
+    .title h1 span {
+        font-size: 46px !important;
+        /*추후 각 페이지별 css에서 수정*/
+        letter-spacing: 0 !important;
+    }
+
+    .title .title_con {
+        font-size: 14px;
+        line-height: 22px;
+        margin-top: 0;
+        height: 86px;
+        font-weight: 400;
+    }
+
+    .title .title_con span br {
+        display: none;
+    }
+
+    .title .l_wrapper {
+        padding-top: 37px;
+    }
+
+    /*tab*/
+    .tab {
+        position: relative;
+        z-index: 20;
+    }
+
+    .tabdown {
+        top: 50px !important;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .tab_menu_box {
+        top: 0;
+
+    }
+
+    .tab_menu {
+        display: none;
+        padding: 0;
+        position: absolute;
+        width: 100%;
+        z-index: 10;
+    }
+
+    .tab_menu li {
+        width: 100% !important;
+        height: 50px;
+        background-color: #F2F2F2;
+        border-bottom: 1px solid #E3E3E3;
+
+
+    }
+
+    .tab_name {
+        height: 50px;
+        padding-left: 20px;
+        display: flex;
+        align-items: center;
+        border: 1px solid #E3E3E3;
+        color: #606060;
+        font-size: 16px;
+        font-weight: 500;
+        cursor: pointer;
+    }
+
+    .tab_menu li a {
+        color: #606060;
+        font-size: 16px;
+        line-height: 50px;
+        text-align: left;
+        padding-left: 20px;
+        font-weight: 500;
+    }
+
+    .tab_menu li::after {
+        content: none;
+    }
+
+    .tab_menu li a.active {
+        color: #606060 !important;
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .down_box {
+        display: flex;
+        position: absolute;
+        width: 30px;
+        height: 50px;
+        top: 0;
+        right: 20px;
+        align-items: center;
+        justify-content: center;
+        z-index: -1;
+    }
+
+    /*tab content*/
+    .scrolltitlebox {
+        padding-bottom: 18px !important;
+        padding-top: 80px !important;
+    }
+
+    .tab_title h2 {
+        font-size: 18px;
+        font-weight: 500;
+        padding-bottom: 5px;
+    }
+
+    .tab_title .bar {
+        background-color: #E3E3E3 !important;
+        height: 16px;
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+    }
+
+
+    .l_wrapper .sort_box {
+        flex-direction: column;
+    }
+
+    .namebox {
+        width: 100%;
+        padding-bottom: 11px;
+    }
+
+    .namebox h3 {
+        font-size: 18px;
+    }
+
+    .namebox h3 br {
+        display: none;
+    }
+
+    .conbox {
+        width: 100%;
+    }
+
+    .conbox > p {
+        font-size: 15px;
+        font-weight: 300;
+        line-height: 26px;
+        padding-top: 0;
+    }
+
+    .conbox .tb {
+        overflow: scroll;
+    }
+
+    /*button*/
+    .btn {
+        flex-direction: column;
+        flex-direction: column-reverse;
+        margin-top: 30px;
+    }
+
+    .btn > div {
+        width: 100%;
+        height: 70px;
+    }
+
+    .btn .left_btn a .btn_move,
+    .btn .right_btn a .btn_move {
+        padding: 0;
+    }
+
+    .btn_move img {
+        height: 30px;
+    }
+
+    .btn div a .btn_title {
+        padding: 0 13px;
+    }
+
+    .btn div a p:nth-child(1) {
+        font-size: 10px;
+    }
+
+    .btn div a p:nth-child(2) {
+        font-size: 16px;
+        line-height: inherit;
+    }
+
+    /*footer*/
+    footer {
+        height: 65px;
+    }
+
+    footer p {
+        font-size: 10px;
+    }
+}

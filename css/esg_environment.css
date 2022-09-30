@@ -1,0 +1,172 @@
+/*title*/
+.title {
+    background-color: #DFF5DC;
+}
+
+.title .title_name {
+    color: #3AA25C;
+}
+
+.title h1 span {
+    font-size: 142px;
+    letter-spacing: -1.562px;
+}
+
+.title .title_con {
+    color: #606060;
+}
+
+
+
+/*tab_menu*/
+.tab_menu li {
+    width: 50%;
+}
+
+.tab_menu li a.active {
+    color: #3AA25C;
+}
+
+.tab_title h2 {
+    color: #3AA25C;
+}
+
+.tab_title .bar {
+    background-color: #3AA25C;
+}
+
+.scrollbox,
+.scrollbox2 {
+    padding: 80px 0;
+}
+
+/*content*/
+.environment_content1,
+.environment_content3,
+.environment_content5 {
+    background-color: #FAFAFA;
+}
+
+.conbox p {
+    padding-bottom: 60px;
+}
+
+.tab_content>div>div:last-child{
+    padding-bottom: 250px;
+}
+
+.environment_content3 .tb img:last-child {
+    padding: 0;
+}
+
+
+/*tab-1*/
+
+#tab-1 .environment_content3 .conbox p {
+    padding-bottom: 97px;
+}
+#tab-1 .environment_content3 .tb div{
+    padding-bottom: 85px;
+}
+#tab-1 .environment_content3 .tb div:last-child{
+    padding-bottom: 0;
+}
+
+
+
+/*tab2*/
+#tab-2 .environment_content3 .conbox .tb p {
+    color: #9A9A9A;
+    font-size: 14px;
+    margin-top: 7px;
+    padding-bottom: 0;
+}
+
+#tab-2 .environment_content3 .tb img {
+    padding-bottom: 0;
+    width: 100%;
+}
+
+
+/*lower button*/
+
+.btn.mg_0 {
+    margin-top: 0;
+}
+
+.btn .left_btn {
+    background-color: #AD1927;
+}
+
+.btn .right_btn {
+    background-color: #E37E28;
+}
+
+/*--------------------------------------------------------모바일--------------------------------------------------------*/
+
+@media screen and (max-width: 800px) {
+
+    
+
+    /*menu*/
+    .nav_act,
+    .nav_act svg g {
+        color: #56B760;
+        fill: #56B760;
+    }
+
+    /*content*/
+    .scrollbox,
+    .scrollbox2 {
+        padding-top: 20px !important;
+        padding-bottom: 30px !important;
+    }
+
+    .conbox p {
+        padding-bottom: 24px;
+    }
+
+    .conbox .tb img {
+        width: 100%;
+        padding-top: 10px;
+    }
+    
+    .tab_content>div>div:last-child {
+        padding-bottom: 60px!important;
+    }
+
+    
+
+    .environment_content2 .tb img {
+        width: 100%;
+    }
+
+   
+    /*tab1*/
+    
+    #tab-1 .environment_content1 .tb img {
+        width: 636px;
+    }
+    #tab-1 .environment_content3 .conbox p {
+        padding-bottom: 24px;
+    }
+    #tab-1 .environment_content3 .tb div{
+        padding-bottom: 30px;
+    }
+    .environment_content3 .tb img {
+        padding-bottom: 25px;
+    }
+    
+    /*tab2*/
+    #tab-2 .conbox .tb img{
+        border-top: 1px solid #D5D5D5;
+    }
+    #tab-2 .environment_content1 .tb img {
+        width: 661px;
+    }
+    #tab-2 .environment_content3 .conbox .tb p {
+        font-size: 10px;
+    }
+
+
+}
